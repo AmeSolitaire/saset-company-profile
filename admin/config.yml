@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: AmeSolitaire/saset-company-profile
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "produk"
+    label: "Katalog Produk"
+    folder: "content/produk"
+    create: true
+    fields:
+      - {label: "Nama Produk", name: "title", widget: "string"}
+      - {label: "Kategori", name: "category", widget: "select", options: ["trainer", "cnc", "welding", "nitrogen", "genset"]}
+      - {label: "Foto Produk", name: "image", widget: "image"}
+      - {label: "Deskripsi Singkat", name: "description", widget: "text"}
+      - {label: "Spesifikasi", name: "specs", widget: "list", field: {label: "Poin Spesifikasi", name: "spec", widget: "string"}}
