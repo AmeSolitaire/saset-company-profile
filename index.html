@@ -466,7 +466,8 @@
                     <h3 class="text-xl font-bold text-slate-900 mb-6">Kirim Pesan & Permintaan Penawaran</h3>
                     
                     <!-- Form terintegrasi FormSubmit dengan CC ke beberapa email -->
-                    <form action="https://formsubmit.co/aliadam.muh@gmail.com" method="POST" class="space-y-4">
+<!-- Form terintegrasi FormSubmit dengan CC dan Dukungan Unggah File -->
+                    <form action="https://formsubmit.co/admin@saset-tekno.my.id" method="POST" enctype="multipart/form-data" class="space-y-4">
                         <!-- Konfigurasi tambahan FormSubmit -->
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" value="Pesan Baru dari Website Saset Techno">
@@ -490,11 +491,18 @@
                             <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-orange-500 focus:outline-none" placeholder="Tuliskan detail kebutuhan atau pertanyaan Anda..."></textarea>
                         </div>
                         
+                        <!-- Tambahan Input untuk Unggah Gambar/File -->
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Lampiran File / Gambar (Opsional)</label>
+                            <input type="file" name="attachment" accept="image/*,application/pdf" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100">
+                            <span class="text-[10px] text-slate-400 mt-1 block">Format yang didukung: Gambar (JPG/PNG) atau PDF, maks. beberapa MB.</span>
+                        </div>
+
                         <div class="flex flex-col sm:flex-row gap-3 pt-2">
                             <!-- Tombol Kirim via Email (FormSubmit) -->
                             <button type="submit" class="flex-1 bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 rounded-xl text-sm transition shadow-lg flex items-center justify-center space-x-2">
                                 <i class="fa-solid fa-envelope text-lg"></i>
-                                <span>Kirim Pesan via Email</span>
+                                <span>Kirim Pesan & Lampiran</span>
                             </button>
 
                             <!-- Tombol Cadangan Kirim ke WhatsApp -->
