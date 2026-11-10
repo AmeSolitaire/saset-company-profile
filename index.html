@@ -584,13 +584,13 @@
                 <div class="p-8 lg:p-12 flex flex-col justify-center">
                     <h3 class="text-xl font-bold text-slate-900 mb-6">Kirim Pesan & Permintaan Penawaran</h3>
 
-                    <!-- Form terintegrasi FormSubmit dengan CC dan Dukungan Unggah File -->
-                    <form action="https://formsubmit.co/admin@saset-tekno.my.id" method="POST"
+                    <!-- Form utama dengan penerima utama Gmail & CC ke dua akun Zoho perusahaan -->
+                    <form action="https://formsubmit.co/aliadam.muh@gmail.com" method="POST"
                         enctype="multipart/form-data" class="space-y-4">
                         <!-- Konfigurasi tambahan FormSubmit -->
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" value="Pesan Baru dari Website Saset Techno">
-                        <!-- Parameter CC untuk mengirim salinan email -->
+                        <!-- Parameter CC untuk mengirim salinan ke Adam & Ade Agus -->
                         <input type="hidden" name="_cc"
                             value="adammuhamadali@saset-tekno.my.id,salimadeagus@saset-tekno.my.id">
 
@@ -621,7 +621,7 @@
                                 placeholder="Tuliskan detail kebutuhan atau pertanyaan Anda..."></textarea>
                         </div>
 
-                        <!-- BAGIAN INI YANG DITAMBAHKAN UNTUK UPLOAD GAMBAR -->
+                        <!-- Input untuk Unggah Gambar/File -->
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1">Lampiran File / Gambar
                                 (Opsional)</label>
