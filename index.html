@@ -227,7 +227,8 @@
                     data-category="trainer">
                     <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
                         onclick="openImageModal(this.querySelector('img'))">
-                        <img src="images/ABS-Trainer-Sepeda-Motor-(Anti-lock-Braking).jpg" alt="ABS Trainer Sepeda Motor (Anti-lock Braking)"
+                        <img src="images/ABS-Trainer-Sepeda-Motor-(Anti-lock-Braking).jpg"
+                            alt="ABS Trainer Sepeda Motor (Anti-lock Braking)"
                             class="w-full h-full object-contain transition transform group-hover:scale-105">
                         <span
                             class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
@@ -267,8 +268,8 @@
                     data-category="trainer">
                     <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
                         onclick="openImageModal(this.querySelector('img'))">
-                        <!-- Pastikan nama file gambar produk 3 diisi dengan benar -->
-                        <img src="images/Trainer-Kelistrikan-Body-Honda-Supra.jpg" alt="Trainer Kelistrikan Body Honda Supra"
+                        <img src="images/Trainer-Kelistrikan-Body-Honda-Supra.jpg"
+                            alt="Trainer Kelistrikan Body Honda Supra"
                             class="w-full h-full object-contain transition transform group-hover:scale-105">
                         <span
                             class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
@@ -302,19 +303,65 @@
                     </div>
                 </div>
 
-                <!-- Produk 4 -->
+                <!-- Produk 4: Trainer CNC Milling SST7113C (1500MDC System) dengan Slider 3 Gambar -->
                 <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col"
                     data-category="cnc">
-                    <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
-                        onclick="openImageModal(this.querySelector('img'))">
-                        <img src="images/Trainer-CNC-Milling-SST7113C(1500MDC-System).jpg"
-                            alt="Trainer CNC Milling SST7113C (1500MDC System)"
-                            class="w-full h-full object-contain transition transform group-hover:scale-105">
+
+                    <!-- Area Slider 3 Gambar -->
+                    <div class="relative h-48 bg-slate-100 overflow-hidden group">
+                        <!-- Wrapper Slide -->
+                        <div class="slider-wrapper flex transition-transform duration-300 ease-in-out h-full w-full"
+                            id="slider-cnc-4">
+
+                            <!-- Gambar 1 (Unit & Tampilan Produk) -->
+                            <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-2 cursor-pointer"
+                                onclick="openImageModal(this.querySelector('img'))">
+                                <img src="images/SST-N2-50L-Tyre-Inflation-Nitrogen.jpeg"
+                                    alt="Trainer CNC Milling SST7113C (1500MDC System)"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <!-- Gambar 2 (Tabel Spesifikasi Teknis / Detail) -->
+                            <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-2 cursor-pointer"
+                                onclick="openImageModal(this.querySelector('img'))">
+                                <img src="images/Trainer-CNC-Milling-SST7113C(1500MDC-System-Product).jpg"
+                                    alt="Detail Spesifikasi Teknis Trainer CNC Milling SST7113C"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <!-- Gambar 3 (Tabel Spesifikasi Teknis / Detail) -->
+                            <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-2 cursor-pointer"
+                                onclick="openImageModal(this.querySelector('img'))">
+                                <img src="images/Trainer-CNC-Milling-SST7113C(1500MDC-System-Detail).jpg"
+                                    alt="Detail Spesifikasi Teknis Trainer CNC Milling SST7113C"
+                                    class="w-full h-full object-contain">
+                            </div>
+                            <!-- Gambar 4 (Sketsa & Dimensi Dudukan Ergonomis) -->
+                            <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-2 cursor-pointer"
+                                onclick="openImageModal(this.querySelector('img'))">
+                                <img src="images/Dudukan-Ergonomis-Mesin-CNC-Milling-TrainerSST7113C.jpg"
+                                    alt="Sketsa & Dimensi Dudukan Ergonomis Mesin CNC Milling"
+                                    class="w-full h-full object-contain">
+                            </div>
+                        </div>
+
+                        <!-- Tombol Panah Kiri -->
+                        <button onclick="prevSlide(event, 'slider-cnc-4')"
+                            class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-orange-600 text-white w-7 h-7 rounded-full flex items-center justify-center transition opacity-0 group-hover:opacity-100 z-10">
+                            <i class="fa-solid fa-chevron-left text-xs"></i>
+                        </button>
+
+                        <!-- Tombol Panah Kanan -->
+                        <button onclick="nextSlide(event, 'slider-cnc-4')"
+                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/60 hover:bg-orange-600 text-white w-7 h-7 rounded-full flex items-center justify-center transition opacity-0 group-hover:opacity-100 z-10">
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+
+                        <!-- Label Petunjuk / Tombol Perbesar -->
                         <span
-                            class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
-                            <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Perbesar
+                            class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none z-10">
+                            <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Geser / Klik untuk Perbesar
                         </span>
                     </div>
+
                     <div class="bg-slate-900 p-4 text-white flex justify-between items-center">
                         <span class="text-xs font-bold bg-orange-500 px-2.5 py-1 rounded">Mesin CNC</span>
                         <span class="text-xs text-slate-400">SASET Techno</span>
@@ -323,24 +370,54 @@
                         <div>
                             <h3 class="text-lg font-bold text-slate-900 mb-2">Trainer CNC Milling SST7113C (1500MDC
                                 System)</h3>
-                            <p class="text-xs text-slate-600 mb-4">Mesin pelatihan CNC milling untuk pendidikan vokasi
-                                dan industri dengan sistem kontrol 1500MDC, akurasi tinggi, dan struktur besi cor kokoh.
+                            <p class="text-xs text-slate-600 mb-4">Mesin pelatihan CNC milling profesional dengan sistem
+                                kontrol 1500MDC, akurasi tinggi, serta dirancang dengan dudukan ergonomis standar K3.
                             </p>
                             <ul class="text-xs text-slate-700 space-y-1 mb-4 border-t border-slate-100 pt-3">
-                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Travel (X/Y/Z): 500 x 320 x
-                                    400 mm</li>
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Travel (X/Y/Z): 300 / 200 /
+                                    200 mm[cite: 21]</li>
                                 <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Spindle Motor: 1.5 kW
-                                    (100-4000 RPM)</li>
-                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Berat Mesin: ±450 kg</li>
+                                    (100-3000 RPM)[cite: 21]</li>
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Dudukan Ergonomis: 1.300 x
+                                    950 x 300 mm[cite: 19]</li>
                             </ul>
                         </div>
                         <button
-                            onclick="openModal('Trainer CNC Milling SST7113C', 'Mesin pelatihan CNC Milling profesional dengan sistem 1500MDC. Ideal untuk Teaching Factory SMK, Politeknik, dan BLK. Dilengkapi kabinet kontrol terintegrasi, spindle tangguh, dan resolusi kontrol 0,001 mm.', '± 1500 x 1200 x 1700 mm', 'Besi cor berkualitas tinggi (Cast Iron)', 'SIPLah & INAPROC')"
+                            onclick="openModal('Trainer CNC Milling SST7113C & Dudukan Ergonomis', 'Mesin pelatihan CNC Milling profesional dengan sistem 1500MDC. Sudah termasuk desain dudukan meja ergonomis (P x L x T: 1.300 x 950 x 300 mm, tinggi total ±1.600 mm) berbahan Plat Atas Baja SS400 tebal 12 mm dan rangka siku plat tebal untuk kenyamanan operator.', 'Mesin: 1.100 x 750 x 1.300 mm | Dudukan: 1.300 x 950 x 300 mm', 'Besi cor (Cast Iron) & Baja SS400 (Meja Dudukan)', 'SIPLah & INAPROC')"
                             class="w-full bg-slate-900 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-xs transition">
                             Lihat Spesifikasi Rinci
                         </button>
                     </div>
                 </div>
+
+                <!-- Skrip JavaScript Pendukung Slider (Cukup dipasang sekali di bawah halaman) -->
+                <script>
+                    // Fungsi untuk menggeser slide ke gambar berikutnya/sebelumnya
+                    const slideIndexes = {};
+
+                    function showSlide(sliderId, index) {
+                        const slider = document.getElementById(sliderId);
+                        if (!slider) return;
+                        const totalSlides = slider.children.length;
+                        if (index >= totalSlides) slideIndexes[sliderId] = 0;
+                        else if (index < 0) slideIndexes[sliderId] = totalSlides - 1;
+                        else slideIndexes[sliderId] = index;
+
+                        slider.style.transform = `translateX(-${slideIndexes[sliderId] * 100}%)`;
+                    }
+
+                    function nextSlide(event, sliderId) {
+                        event.stopPropagation(); // Mencegah modal utama terbuka saat tombol panah diklik
+                        if (slideIndexes[sliderId] === undefined) slideIndexes[sliderId] = 0;
+                        showSlide(sliderId, slideIndexes[sliderId] + 1);
+                    }
+
+                    function prevSlide(event, sliderId) {
+                        event.stopPropagation(); // Mencegah modal utama terbuka saat tombol panah diklik
+                        if (slideIndexes[sliderId] === undefined) slideIndexes[sliderId] = 0;
+                        showSlide(sliderId, slideIndexes[sliderId] - 1);
+                    }
+                </script>
 
                 <!-- Produk 5 -->
                 <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col"
@@ -386,7 +463,8 @@
                     data-category="welding">
                     <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
                         onclick="openImageModal(this.querySelector('img'))">
-                        <img src="images/Mesin-Las-Inverter SST-SMAWARC400i.jpg" alt="Mesin Las Inverter SST SMAW/ARC400i"
+                        <img src="images/Mesin-Las-Inverter SST-SMAWARC400i.jpg"
+                            alt="Mesin Las Inverter SST SMAW/ARC400i"
                             class="w-full h-full object-contain transition transform group-hover:scale-105">
                         <span
                             class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
@@ -425,7 +503,8 @@
                     data-category="welding">
                     <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
                         onclick="openImageModal(this.querySelector('img'))">
-                        <img src="images/Gas-Metal-Arc-Welding-(SST-MIG-Series).jpeg" alt="Gas Metal Arc Welding (SST-MIG Series)"
+                        <img src="images/Gas-Metal-Arc-Welding-(SST-MIG-Series).jpeg"
+                            alt="Gas Metal Arc Welding (SST-MIG Series)"
                             class="w-full h-full object-contain transition transform group-hover:scale-105">
                         <span
                             class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
@@ -463,7 +542,8 @@
                     data-category="nitrogen">
                     <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
                         onclick="openImageModal(this.querySelector('img'))">
-                        <img src="images/SST-N2-50L-Tyre-Inflation-Nitrogen.jpeg" alt="SST-N2-50L Tyre Inflation Nitrogen"
+                        <img src="images/SST-N2-50L-Tyre-Inflation-Nitrogen.jpeg"
+                            alt="SST-N2-50L Tyre Inflation Nitrogen"
                             class="w-full h-full object-contain transition transform group-hover:scale-105">
                         <span
                             class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
@@ -502,7 +582,8 @@
                     data-category="genset">
                     <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
                         onclick="openImageModal(this.querySelector('img'))">
-                        <img src="images/V-GEN-Diesel-Generating-Set(VG500W-Silent).jpg" alt="V-GEN Diesel Generating Set (VG500W Silent)"
+                        <img src="images/V-GEN-Diesel-Generating-Set(VG500W-Silent).jpg"
+                            alt="V-GEN Diesel Generating Set (VG500W Silent)"
                             class="w-full h-full object-contain transition transform group-hover:scale-105">
                         <span
                             class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
@@ -531,6 +612,124 @@
                         </div>
                         <button
                             onclick="openModal('V-GEN VG500W Diesel Generator', 'Genset diesel 3 fasa 50/60Hz dengan mesin Weifang berperforma tangguh. Dilengkapi modul kontrol DeepSea, sistem peredam suara tingkat lanjut, tangki bahan bakar 300L, dan radiator 50C.', '4200 x 1200 x 1750 mm (Berat: 3900 kg)', 'Heavy Duty Acoustic Canopy Silent', 'SIPLah & INAPROC')"
+                            class="w-full bg-slate-900 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-xs transition">
+                            Lihat Spesifikasi Rinci
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produk 10: Mesin Las Inverter SST-ARC400 -->
+                <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col"
+                    data-category="welding">
+                    <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
+                        onclick="openImageModal(this.querySelector('img'))">
+                        <img src="images/Mesin-Las-Inverter-SST-ARC400.jpeg" alt="Mesin Las Inverter SST-ARC400"
+                            class="w-full h-full object-contain transition transform group-hover:scale-105">
+                        <span
+                            class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
+                            <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Perbesar
+                        </span>
+                    </div>
+                    <div class="bg-slate-900 p-4 text-white flex justify-between items-center">
+                        <span class="text-xs font-bold bg-orange-500 px-2.5 py-1 rounded">Mesin Las</span>
+                        <span class="text-xs text-slate-400">SASET Techno</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Mesin Las Inverter SST-ARC400</h3>
+                            <p class="text-xs text-slate-600 mb-4">Mesin las kuat, presisi, dan andal untuk fabrikasi
+                                logam, konstruksi, perbengkelan, manufaktur, serta pemeliharaan dan perbaikan[cite: 17].
+                            </p>
+                            <ul class="text-xs text-slate-700 space-y-1 mb-4 border-t border-slate-100 pt-3">
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Input: AC 380 V, 3 Fasa,
+                                    50/60 Hz[cite: 17]</li>
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Rentang Output: 40 A / 21,6
+                                    V - 400 A / 36 V[cite: 17]</li>
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Duty Cycle: 30% @ 400
+                                    A[cite: 17]</li>
+                            </ul>
+                        </div>
+                        <button
+                            onclick="openModal('Mesin Las Inverter SST-ARC400', 'Mesin las inverter heavy-duty dengan teknologi IGBT terbaru. Dilengkapi display arus digital, pengaturan presisi, dan sistem pendingin kipas untuk pemakaian industri.', '512 x 268 x 428 mm', 'Konstruksi Baja Industri', 'SIPLah & INAPROC')"
+                            class="w-full bg-slate-900 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-xs transition">
+                            Lihat Spesifikasi Rinci
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produk 11: Timing Light (Alat Pengukur Waktu Pengapian Mesin) -->
+                <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col"
+                    data-category="trainer">
+                    <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
+                        onclick="openImageModal(this.querySelector('img'))">
+                        <img src="images/Timing-Light-SST.jpg" alt="Timing Light Alat Pengukur Waktu Pengapian Mesin"
+                            class="w-full h-full object-contain transition transform group-hover:scale-105">
+                        <span
+                            class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
+                            <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Perbesar
+                        </span>
+                    </div>
+                    <div class="bg-slate-900 p-4 text-white flex justify-between items-center">
+                        <span class="text-xs font-bold bg-orange-500 px-2.5 py-1 rounded">Trainer Otomotif</span>
+                        <span class="text-xs text-slate-400">SASET Techno</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Timing Light (Alat Pengukur Waktu
+                                Pengapian Mesin)</h3>
+                            <p class="text-xs text-slate-600 mb-4">Alat profesional untuk memeriksa dan menyetel timing
+                                pengapian secara akurat pada berbagai jenis mesin bensin[cite: 16].</p>
+                            <ul class="text-xs text-slate-700 space-y-1 mb-4 border-t border-slate-100 pt-3">
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Akurasi Tinggi: Pengukuran
+                                    presisi tinggi[cite: 16]</li>
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Kompatibel: Untuk berbagai
+                                    jenis mesin bensin 4 tak[cite: 16]</li>
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Desain Ergonomis &
+                                    Praktis[cite: 16]</li>
+                            </ul>
+                        </div>
+                        <button
+                            onclick="openModal('Timing Light Otomotif', 'Alat pengukur waktu pengapian mesin bensin profesional. Sangat ideal untuk praktikum otomotif sekolah kejuruan, politeknik, dan bengkel servis kendaraan.', 'Standar Portabel Bengkel', 'Material ABS Berkualitas Tinggi', 'SIPLah & INAPROC')"
+                            class="w-full bg-slate-900 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-xs transition">
+                            Lihat Spesifikasi Rinci
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produk 12: Trainer CNC Milling SST7113A (Mach3 System) -->
+                <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200 flex flex-col"
+                    data-category="cnc">
+                    <div class="relative h-48 bg-slate-100 flex items-center justify-center p-2 cursor-pointer group"
+                        onclick="openImageModal(this.querySelector('img'))">
+                        <img src="images/Trainer-CNC-Miling-SST7113A-MACH3-SYSTEM.jpg"
+                            alt="Trainer CNC Milling SST7113A Mach3 System"
+                            class="w-full h-full object-contain transition transform group-hover:scale-105">
+                        <span
+                            class="absolute bottom-2 right-2 bg-slate-900/70 text-white text-[10px] px-2 py-0.5 rounded-md pointer-events-none">
+                            <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Perbesar
+                        </span>
+                    </div>
+                    <div class="bg-slate-900 p-4 text-white flex justify-between items-center">
+                        <span class="text-xs font-bold bg-orange-500 px-2.5 py-1 rounded">Mesin CNC</span>
+                        <span class="text-xs text-slate-400">SASET Techno</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Trainer CNC Milling SST7113A (Mach3
+                                System)</h3>
+                            <p class="text-xs text-slate-600 mb-4">Solusi praktis untuk pelatihan dan pengembangan
+                                kompetensi CNC berbasis kontrol Mach3 yang stabil dan mudah digunakan[cite: 19].</p>
+                            <ul class="text-xs text-slate-700 space-y-1 mb-4 border-t border-slate-100 pt-3">
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Travel (X/Y/Z): 300 / 180 /
+                                    150 mm[cite: 19]</li>
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Spindle Motor: 1.5 kW
+                                    (100-2500 RPM)[cite: 19]</li>
+                                <li><i class="fa-solid fa-check text-orange-500 mr-1.5"></i> Berat Mesin: ±180 Kg[cite:
+                                    19]</li>
+                            </ul>
+                        </div>
+                        <button
+                            onclick="openModal('Trainer CNC Milling SST7113A', 'Mesin pelatihan CNC Milling dengan kontrol Mach3 system. Dirancang khusus untuk pendidikan dan pelatihan vokasi, teaching factory, serta uji kompetensi CNC milling.', '900 x 700 x 1150 mm', 'Rangka mesin solid dan tahan lama', 'SIPLah & INAPROC')"
                             class="w-full bg-slate-900 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-xs transition">
                             Lihat Spesifikasi Rinci
                         </button>
@@ -573,11 +772,9 @@
                     const modalImg = document.getElementById('modalImage');
                     const modalCaption = document.getElementById('modalCaption');
 
-                    // Ambil langsung sumber dan alt dari elemen gambar yang diklik
                     modalImg.src = imgElement.src;
                     modalCaption.textContent = imgElement.alt;
 
-                    // Tampilkan modal
                     modal.classList.remove('hidden');
                 }
 
